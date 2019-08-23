@@ -1,6 +1,6 @@
 baseurl = "https://glumia.github.io/"
 author = "Giuseppe Lumia"
-title = "glumia's site"
+title = "glumia's blog"
 theme = "cocoa-eh"
 contentdir = "content"
 languageCode = "en-US"
