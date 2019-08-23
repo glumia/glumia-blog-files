@@ -1,0 +1,36 @@
+baseurl = "https://glumia.github.io/"
+author = "Giuseppe Lumia"
+title = "glumia's site"
+theme = "cocoa-eh"
+contentdir = "content"
+languageCode = "en-US"
+layoutdir = "layouts"
+publishdir = "public"
+pluralizelisttitles = false
+enableRobotsTXT=true
+canonifyurls = true
+
+
+
+[permalinks]
+blog = "blog/:slug/"
+
+
+[params]
+dateform = "Jan 2, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+description = "glumia's blog"
+copyright = "CC BY-SA 4.0 © 2019 Giuseppe Lumia"
+copyrightUrl = "https://creativecommons.org/licenses/by-sa/4.0/"
+logofile = "logo_glumia.jpg"
+faviconfile = "favicon-32x32.png"
+highlightjs = true
+github = "glumia"
+email = "gius-italy@live.it"
+linkedin = "glumia"
+posts_navigation = true
+small_banner_logo = false
+lang = "en"
+progressively = true
+latestpostcount = 5
+
