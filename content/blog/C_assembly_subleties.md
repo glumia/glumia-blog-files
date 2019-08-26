@@ -83,6 +83,60 @@ Since the second version implies only two memory accesses against three of the f
 
 Notice I labeled *load* and *store* generically as *memory access* instructions. This because the two instructions generally require the same computation time. But... what if the store instruction was way more expensive than the load instruction? In this particular case the first version would have been better but I personally don't know any real case in which this happens to be true.
 
+
 ###### *PS: Don't take me for a source of absolute truth on these topics, some information here could be misleading or (I hope not...) wrong at all. In both cases please send me an email and let me know, I'll be happy to learn something new and to correct the post.*
 
+----
+
+### Update 26/08/19 - C Compiler Optimizations
+It's interesting to observe that in a "real" program like the following one, compiling  with gcc -O3 (level 3 optimizations enabled) yields to the same identical assembly code for both versions.
+    
+    $ cat ex-v1.c
+    #include <stdio.h>
+    #define	IN	1
+    #define	OUT	0
+    int main(){
+    	int c;
+    	int state;
+    	while((c = getchar()) != EOF){
+    		if(c == '\n' || c == '\t' || c == ' '){
+    			if(state == IN){
+    				putchar('\n');
+    				state = OUT;
+    			}
+    		}
+    		else{
+    			if(state == OUT)
+    				state = IN;
+    			putchar(c);
+    		}
+    	}
+    	return 0;
+    }
+    $ cat ex-v2.c
+    #include <stdio.h>
+    #define	IN	1
+    #define	OUT	0
+    int main(){
+    	int c;
+    	int state;
+    	while((c = getchar()) != EOF){
+    		if(c == '\n' || c == '\t' || c == ' '){
+    			if(state == IN){
+    				putchar('\n');
+    				state = OUT;
+    			}
+    		}
+    		else{
+    			state = IN;
+    			putchar(c);
+    		}
+    	}
+    	return 0;
+    }
+    $ gcc -O3 -S ex-v1.c ex-v2.c && diff ex-v1.s ex-v2.s
+    1c1
+    < 	.file	"ex-v1.c"
+    ---
+    > 	.file	"ex-v2.c" 
 
