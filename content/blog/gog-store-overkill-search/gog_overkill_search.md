@@ -4,7 +4,7 @@ tags = ["python", "scripting"]
 title = "GOG Store - Overkill search"
 +++
 
-![image](/blog/gog_overkill_search/gogemail.png)
+![image](/blog/gog-store-overkill-search/gogemail.png)
 
 I had 1.30 euro remaining on my GOG wallet and I had to use them before sept. 19 or I would lose them. So I started to search on the GOG Store for a game whose price would be less or equal to 1.30 euro and greater than 0€ (since I wasn't searching a free game...) but the default filters of the website's search engine allowed me to filter only games whose price was less than 5€.
 Given that they where still 530 results and that I'm a very lazy person I worked my way out to automate the search using the GOG API and a simple Python script.

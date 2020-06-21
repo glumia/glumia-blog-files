@@ -1,10 +1,10 @@
 +++
 date = "2020-06-21"
 tags = ["python", "clojure", "c", "math", "programming"]
-title = "Clojure, Python, C: three programming languages, one algorithm."
+title = "Clojure, Python, C: three programming languages, one algorithm"
 +++
 
-![image](/blog/naive_compute_primes/comparison.png)
+![image](/blog/clojure-python-c-three-programming-languages-one-algorithm/comparison.png)
 
 
 Too lazy to write something now ¯\_(ツ)_/¯.
