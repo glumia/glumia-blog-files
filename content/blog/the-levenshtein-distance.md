@@ -15,12 +15,12 @@ It's fascinating how everything you can think of in computer science 9 times out
 from itertools import zip_longest
 
 
-def levenshtein_distance(x, y):
-    """Compute the Levenshtein distance between strings x and y."""
+def strings_distance(x, y):
+    """Compute a distance between strings x and y."""
     return sum((0 if m == n else 1 for m, n in zip_longest(x, y)))
 
 
-def suggestions(s, dictionary, distance=levenshtein_distance, tol=4):
+def suggestions(s, dictionary, distance=strings_distance, tol=4):
     """Use the distance function to search similar words inside the dictionary.
 
     :param s: the string to get suggestions for.
