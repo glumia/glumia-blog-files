@@ -1,7 +1,3 @@
-[submodule "themes/cocoa-eh"]
-	path = themes/cocoa-eh
-	url = git@github.com:mtn/cocoa-eh-hugo-theme.git
-	branch = master
 [submodule "public"]
 	path = public
 	url = git@github.com:glumia/glumia.github.io.git
