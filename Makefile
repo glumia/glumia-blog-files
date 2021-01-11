@@ -1,5 +1,14 @@
 .POSIX:
 
+OPENRING_PATH="layouts/partials/openring.html"
+
+# Clean `public` submodule
+clean:
+	cd public \
+		&& git checkout master \
+		&& git reset --hard origin/master
+	rm -rf public/*
+
 
 # Generate updated openring section html
 update-openring:
@@ -7,26 +16,22 @@ update-openring:
 		-s https://drewdevault.com/blog/index.xml \
 		-s https://nullprogram.com/feed \
 		-s https://danluu.com/atom.xml \
-		< openring.template > layouts/partials/openring.html
+		< openring.template > $(OPENRING_PATH)
+
+
+# Generate a clean build of the blog
+build: clean update-openring
+	hugo
+
 
 # Generate static content and push it to submodule's repository
-release: update-openring
-	git push
-	cd public \
-		&& git checkout master
-	hugo
-	CURRENT_REF=$$(git log -1 --pretty="%h %s") \
-		&& cd public \
-			&& git add . \
-			&& git commit -m "Release - $$CURRENT_REF" \
-			&& git push
-	git add public
-	git commit -m "Update submodule ref"
+release: build
+	git diff --quiet $(OPENRING_PATH) || \
+		(git add $(OPENRING_PATH) && git commit -m 'Update openring')
+	CURRENT_REF=$$(git log -1 --pretty="%s") \
+	&& cd public && git diff --quiet || \
+		(git add . && git commit -m "Release" && git push)
+	git diff --quiet public || \
+		(git add public && git commit -m "Update submodule ref" )
 	git push
 
-# Clean `public` submodule
-clean:
-	cd public \
-		&& git reset --hard origin/master
-
-	
