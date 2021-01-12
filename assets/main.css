@@ -487,6 +487,7 @@ div.main .content .markdown pre {
   font-family: 'Menlo', monospace;
   font-size: 0.98rem;
   background-color: #f7f7f7;
+  overflow: auto;
 }
 div.main .content .markdown code {
   /* enclosed by single backtick (`) */
