@@ -25,12 +25,13 @@ build: clean update-openring
 
 
 # Generate static content and push it to submodule's repository
+TITLE := ""
 release: build
 	git diff --quiet $(OPENRING_PATH) || \
 		(git add $(OPENRING_PATH) && git commit -m 'Update openring')
-	CURRENT_REF=$$(git log -1 --pretty="%s") \
+	CURRENT_REF=$$(git log -1 --pretty="%s") && TITLE="$(TITLE)" \
 	&& cd public && git diff --quiet || \
-		(git add . && git commit -m "Release" && git push)
+		(git add . && git commit -m "Release$${TITLE:+ - $$TITLE}" && git push)
 	git diff --quiet public || \
 		(git add public && git commit -m "Update submodule ref" )
 	git push
