@@ -1,17 +1,13 @@
 <!-- CSS -->
 
-{{ $main := resources.Get "main.css" | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" media="screen" href="{{ $main.RelPermalink }}">
+{{ $css := slice (resources.Get "base.css") (resources.Get "openring.css") | resources.Concat "main.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" media="screen" href="{{ $css.RelPermalink }}">
 
 {{ $min600px := resources.Get "min600px.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" media="(min-width: 600px)" href="{{ $min600px.RelPermalink }}">
 
 {{ $min769px := resources.Get "min769px.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" media="(min-width: 769px)" href="{{ $min769px.RelPermalink }}">
-
-{{ $openring := resources.Get "openring.css" | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $openring.RelPermalink }}">
-
 
 <!-- Icon -->
 <link rel="shortcut icon"

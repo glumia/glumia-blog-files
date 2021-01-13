@@ -42,8 +42,6 @@
                 {{ .Content }}
             </div>
 
-            {{ partial "openring.html" . }}
-
             {{ if .Site.Params.posts_navigation }}
             <br>
             <div class="navigation">
@@ -65,3 +63,5 @@
         </div>
     </div>
 </div>
+
+{{ partial "openring.html" . }}

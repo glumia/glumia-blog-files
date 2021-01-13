@@ -3,11 +3,9 @@
 }
 .webring .articles {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   margin: -0.5rem;
-}
-.webring .title {
-  margin: 0;
 }
 .webring .article {
   flex: 1 1 0;
@@ -20,7 +18,6 @@
 }
 .webring .summary {
   font-size: 0.8rem;
-  flex: 1 1 0;
 }
 .webring .attribution {
   text-align: right;
