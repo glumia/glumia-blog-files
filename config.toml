@@ -35,3 +35,6 @@ lang = "en"
 progressively = true
 latestpostcount = 5
 
+[markup]
+  [markup.highlight]
+    style="tango"

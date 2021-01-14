@@ -4,14 +4,21 @@ tags = ["Algorithms","Python"]
 title = "The Levenshtein Distance"
 +++
 
-It's fascinating how everything you can think of in computer science 9 times out of 10 was already thought and probably studied by someone else. Today I was thinking about a way to suggest corrections for addresses inserted by our customers when I started to imagine an algorithm that used the mathematical notion of 'distance' (check 'Metric (mathematics)' on Wikipedia [^1] ) to give them some suggestions based on a set of valid addresses present on our DB. Well, now I find out that it's a well-known problem in computer science, that a wide range of algorithms[^2] has already been designed to solve it and that what I was starting to think on was a variation of the Levenshtein distance!
+It's fascinating how everything you can think of in computer science 9 times out of 10
+was already thought and probably studied by someone else. Today I was thinking about a
+way to suggest corrections for addresses inserted by our customers when I started to
+imagine an algorithm that used the mathematical notion of 'distance' (check 'Metric
+(mathematics)' on Wikipedia [^1] ) to give them some suggestions based on a set of valid
+addresses present on our DB. Well, now I find out that it's a well-known problem in
+computer science, that a wide range of algorithms[^2] has already been designed to solve
+it and that what I was starting to think on was a variation of the Levenshtein distance!
 
 
 
 
 #### A code snippet in Python that implements those ideas
 
-```
+```python
 from itertools import zip_longest
 
 
