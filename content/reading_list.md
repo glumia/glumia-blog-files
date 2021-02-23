@@ -15,10 +15,10 @@ Read
 
 Want to
 - Designing Data‑Intensive Applications - M. Kleppmann
-- Clean Code - R. Martin
 - Site Reliability Engineering
 
 Considering
+- Clean Code - R. Martin
 - Digital Design and Computer Architecture - D.Harris 
 - Effective Python - B. Slatkin
 - High Performance Python - I. Ozsvald, M. Gorelick
