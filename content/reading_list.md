@@ -27,3 +27,4 @@ Considering
 - Structure and Interpretation of Computer Programs - H. Abelson e al.
 - Refactoring - K. Beck, M. Fowler 
 - Working Effectively with Legacy Code - M. Feathers
+- Refactoring: Improving the Design of Existing Code
