@@ -2,11 +2,14 @@
 
 OPENRING_PATH="layouts/partials/openring.html"
 
+# Sync repository with remote
+update-repo:
+	git fetch origin
+	git reset --hard origin/master
+	cd public && git reset --hard origin/master
+
 # Clean `public` submodule
 clean:
-	cd public \
-		&& git checkout master \
-		&& git reset --hard origin/master
 	rm -rf public/*
 
 
@@ -26,7 +29,7 @@ build: clean update-openring
 
 # Generate static content and push it to submodule's repository
 TITLE := ""
-release: build
+release: update-repo build
 	git diff --quiet $(OPENRING_PATH) || \
 		(git add $(OPENRING_PATH) && git commit -m 'Update openring')
 	CURRENT_REF=$$(git log -1 --pretty="%s") && TITLE="$(TITLE)" \
