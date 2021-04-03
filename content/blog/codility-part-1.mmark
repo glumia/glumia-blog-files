@@ -35,7 +35,7 @@ is interesting, particularly the part regarding estimates about the upper limit
 of the time complexity a solution should have.
 
 ## Key takeaway
-- An average computer can perform something like 10^8 operations/s.
+- An average computer can perform something like $$10^8$$ operations/s.
 - The time limit for test cases is usually 1 to 10 seconds.
 
 With both this information and those of the test (usually you are given the
@@ -80,14 +80,15 @@ def solution(A, B, m):
 
 # 5. Prefix Sums
 This is a totally new concept/technique to me. It looks really powerful to
-avoid complexity `O(n^2)` or `O(n*m)` and get `O(n)` or `O(n+m)` instead.
+avoid complexity $$O(n^2)$$ or $$O(n \cdot m)$$ and get $$O(n)$$ or $$O(n+m)$$
+instead.
 
 The idea is simple but I still need to acquire the skill to recognize problems
 where this technique can be used.
 
 ## Question MinAvgTwoSlice
 This one was hard. I wasn't able to solve it by myself with a complexity
-less than O(n^2) without reading *"There must be some slices, with length of
+less than $$O(n^2)$$ without reading *"There must be some slices, with length of
 two or three, having the minimal average value among all the slices"* in
 [this](https://codesays.com/2014/solution-to-min-avg-two-slice-by-codility/)
 blog post. Pretty obvious in retrospect, but I was nowhere near to getting
@@ -110,3 +111,8 @@ def solution(A):
 
     return min(averages, key=lambda x: x[2])[0]
 ```
+
+---
+
+That's all for the first part of this series, I'll add other posts as I go
+forward with the lessons.
