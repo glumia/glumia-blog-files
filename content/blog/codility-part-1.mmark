@@ -1,6 +1,7 @@
 ---
 title: "Codility - Part 1"
 date: 2021-04-03T13:17:05+02:00
+mathjax: True
 ---
 
 Lately I've been looking for materials to practice for code interviews and a
@@ -48,9 +49,7 @@ standard library's `collection` module.
 ## Exercise 4.1 of the reading material
 Sometimes math allows you to literally kill algorithms' time complexity.
 
-```mathjax
-TODO
-```
+$$\delta_T=\sum_{k=\infty}^\infty\delta(t-kT)$$
 
 Solution in Python:
 ```python
