@@ -49,7 +49,20 @@ standard library's `collection` module.
 ## Exercise 4.1 of the reading material
 Sometimes math allows you to literally kill algorithms' time complexity.
 
-$$\delta_T=\sum_{k=\infty}^\infty\delta(t-kT)$$
+Let $$S_{A} = \sum_{i=0}^{n-1} a_i$$ and $$S_{B} = \sum_{i=0}^{n-1} b_i$$.
+
+Denote as $$a_i$$ and $$b_j$$ the elements of A and B we need (eventually) to swap.
+
+If such elements exist that solve the problem, then it holds true that:
+$$S_A - a_i + b_j = S_B + a_i - b_j \\
+\Rightarrow 2 a_i - 2 b_j = S_A - S_B \\
+\Rightarrow a_i = b_j + (S_A - S_B) / 2 $$
+
+This means that our problem admits a solution if and only if $$S_A - S_B$$ is
+divisible by 2 and if the above equality holds true for some i and j.
+
+This can be verified with an algorithm of complexity $$O(n+m)$$.
+
 
 Solution in Python:
 ```python
