@@ -1,8 +1,0 @@
-[submodule "public"]
-	path = public
-	url = git@github.com:glumia/glumia.github.io.git
-	branch = master
-[submodule "openring"]
-	path = openring
-	url = https://git.sr.ht/~sircmpwn/openring
-	branch = master

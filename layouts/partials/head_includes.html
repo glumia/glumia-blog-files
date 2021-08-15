@@ -1,6 +1,6 @@
 <!-- CSS -->
 
-{{ $css := slice (resources.Get "base.css") (resources.Get "openring.css") | resources.Concat "main.css" | resources.Minify | resources.Fingerprint }}
+{{ $css := slice (resources.Get "base.css") | resources.Concat "main.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" media="screen" href="{{ $css.RelPermalink }}">
 
 {{ $min600px := resources.Get "min600px.css" | resources.Minify | resources.Fingerprint }}
