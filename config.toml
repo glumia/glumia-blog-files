@@ -38,3 +38,8 @@ latestpostcount = 5
 [markup]
   [markup.highlight]
     style="tango"
+
+[sitemap]
+changefreq = 'weekly'
+filename = 'sitemap.xml'
+priority = 0.5
