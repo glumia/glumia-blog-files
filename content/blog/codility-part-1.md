@@ -1,6 +1,7 @@
 ---
 title: "Codility - Part 1"
 date: 2021-04-03T13:17:05+02:00
+mathjax: true
 ---
 
 Lately I've been looking for materials to practice for code interviews and a
@@ -34,7 +35,7 @@ is interesting, particularly the part regarding estimates about the upper limit
 of the time complexity a solution should have.
 
 ## Key takeaway
-- An average computer can perform something like $$10^8$$ operations/s.
+- An average computer can perform something like $10^8$ operations/s.
 - The time limit for test cases is usually 1 to 10 seconds.
 
 With both this information and those of the test (usually you are given the
@@ -48,19 +49,21 @@ the standard library's `collection` module.
 ## Exercise 4.1 of the reading material
 Sometimes math allows you to literally kill algorithms' time complexity.
 
-Let $$S_{A} = \sum_{i=0}^{n-1} a_i$$ and $$S_{B} = \sum_{i=0}^{n-1} b_i$$.
+Let $S\_{A} = \sum\_{i=0}^{n-1} a\_i$ and $S\_{B} = \sum\_{i=0}^{n-1} b\_i$.
 
-Denote as $$a_i$$ and $$b_j$$ the elements of A and B we need (eventually) to swap.
+Denote as $a\_i$ and $b\_j$ the elements of A and B we need (eventually) to swap.
 
 If such elements exist that solve the problem, then it is true that:
-$$S_A - a_i + b_j = S_B + a_i - b_j \\
-\Rightarrow 2 a_i - 2 b_j = S_A - S_B \\
-\Rightarrow a_i = b_j + (S_A - S_B) / 2 $$
+$$\displaylines{
+S\_A - a\_i + b\_j = S\_B + a\_i - b\_j \\\\
+\Rightarrow 2 a\_i - 2 b\_j = S\_A - S\_B \\\\
+\Rightarrow a\_i = b\_j + (S\_A - S\_B) / 2
+}$$
 
-This means that our problem admits a solution if and only if $$S_A - S_B$$ is
+This means that our problem admits a solution if and only if $S\_A - S\_B$ is
 divisible by 2 and if the above equality holds for some i and j.
 
-This can be verified with an algorithm of complexity $$O(n+m)$$.
+This can be verified with an algorithm of complexity $O(n+m)$.
 
 
 Solution in Python:
@@ -79,7 +82,7 @@ def solution(A, B, m):
 
 # 5. Prefix Sums
 This is a totally new concept/technique to me. It looks really powerful to
-avoid complexity $$O(n^2)$$ or $$O(n \cdot m)$$ and get $$O(n)$$ or $$O(n+m)$$
+avoid complexity $O(n^2)$ or $O(n \cdot m)$ and get $O(n)$ or $O(n+m)$
 instead.
 
 The idea is simple but I still need to acquire the skill to recognize problems
@@ -87,7 +90,7 @@ where this technique can be used.
 
 ## Question MinAvgTwoSlice
 This one was hard. I wasn't able to solve it by myself with a complexity
-less than $$O(n^2)$$ without reading *"There must be some slices, with length of
+less than $O(n^2)$ without reading *"There must be some slices, with length of
 two or three, having the minimal average value among all the slices"* in
 [this](https://codesays.com/2014/solution-to-min-avg-two-slice-by-codility/)
 blog post. Pretty obvious in retrospect, but I was nowhere near to getting

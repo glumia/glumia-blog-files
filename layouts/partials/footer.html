@@ -79,13 +79,22 @@
             </a>
         {{ end }}
 
-        {{ if eq .File.Ext "mmark"}}
-            <script type="text/x-mathjax-config">
-              MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-            </script>
-            <script type="text/javascript"
-              src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-            </script>
+        {{ if .Params.mathjax }}
+        <script>
+          MathJax = {
+            tex: {
+              inlineMath: [['$', '$'], ['\\(', '\\)']],
+              displayMath: [['$$','$$'], ['\\[', '\\]']],
+              processEscapes: true,
+              processEnvironments: true
+            },
+            options: {
+              skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+          };
+        </script>
+        <script type="text/javascript" id="mathjax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         {{ end }}
 
         </div>
