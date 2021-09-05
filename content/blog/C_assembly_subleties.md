@@ -66,7 +66,7 @@ In this version of the program we have 3 accesses to memory in case flag equals 
 loads and one store) and 2 accesses in case flag equals 1(only two loads).
 
 Notice that we also have two jump instructions inside the loop, one to stay inside it
-until condition equals 0 and one to skip the assigment if flag is already equal to 1. 
+until condition equals 0 and one to skip the assignment if flag is already equal to 1. 
 
 ### Second version - Set to 1, don't bother with checking the previous value
 ```C
