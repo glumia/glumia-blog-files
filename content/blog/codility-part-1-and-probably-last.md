@@ -1,5 +1,5 @@
 ---
-title: "Codility - Part 1"
+title: "Codility - Part 1 (and probably last, until I'll get back to job hunting)"
 date: 2021-04-03T13:17:05+02:00
 mathjax: true
 ---
