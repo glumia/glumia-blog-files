@@ -19,18 +19,12 @@ here in the blog.
 I want to do it mainly to keep myself engaged and force myself to
 'distil' a bit of what I learn in the process. Also, I want to try to be less
 perfectionist with my blog writing and see what happens: if I write so
-seldom it's mainly because I know how long it requires me and I end not
+seldom it's mainly because I know how long it requires and I end not
 writing at all.
 
 # Codility lessons
-# 1. Iterations
-Easy peasy, beginner programming stuff.
-
-# 2. Arrays
-Easy peasy, beginner programming stuff.
-
 # 3. Time Complexity
-Easy tasks. The [reading](https://codility.com/media/train/1-TimeComplexity.pdf)
+The [reading](https://codility.com/media/train/1-TimeComplexity.pdf)
 is interesting, particularly the part regarding estimates about the upper limit
 of the time complexity a solution should have.
 
