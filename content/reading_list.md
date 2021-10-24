@@ -9,6 +9,7 @@ A collection of blogs I think are worth reading.
 - https://drewdevault.com
 - https://www.brendangregg.com/blog
 - https://nullprogram.com
+- https://scattered-thoughts.net
 
 ### Books
 A collection of books I have read, I am currently reading, or I'm considering
