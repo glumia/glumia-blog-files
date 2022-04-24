@@ -6,9 +6,6 @@
 {{ $min600px := resources.Get "min600px.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" media="(min-width: 600px)" href="{{ $min600px.RelPermalink }}">
 
-{{ $min769px := resources.Get "min769px.css" | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" media="(min-width: 769px)" href="{{ $min769px.RelPermalink }}">
-
 <!-- Icon -->
 <link rel="shortcut icon"
 {{ if .Site.Params.faviconfile }}
