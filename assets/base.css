@@ -1,16 +1,83 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -19,22 +86,36 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, div.column {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+div.column {
   display: block;
 }
 body {
   line-height: 1;
 }
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 table {
@@ -65,7 +146,7 @@ body {
   width: 100%;
   min-height: 100%;
   font-weight: 400;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
   color: #111111;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
@@ -105,7 +186,7 @@ div.header .container .logo {
 div.header .name {
   padding-top: 20px;
   font-size: 28px;
-  font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: "Nexa Bold", "Helvetica Neue", "Arial", sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
   font-smoothing: antialiased;
@@ -134,7 +215,7 @@ div.header nav ul a {
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 div.header nav ul a:hover {
   color: #111111;
@@ -190,7 +271,7 @@ div.main .content .posts {
 div.main .content .page-heading {
   font-size: 20px;
   font-weight: 700;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
   font-smoothing: antialiased;
@@ -241,7 +322,7 @@ div.main .container.f04 .content {
 div.main .container.f04 .content .num {
   margin: 30px 0px 30px 0;
   font-weight: 400;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
   font-size: 50px;
 }
 div.main .container.f04 .content .detail {
@@ -289,11 +370,11 @@ div.main {
   padding-top: 32px;
 }
 div.main .container .content .post-item .meta {
-    display: block;
+  display: block;
 }
 div.main .container .content .post-item {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 a {
   color: #428bca;
@@ -305,7 +386,7 @@ img {
   max-width: 100%;
 }
 div.main .content {
-    width: 100%;
+  width: 100%;
 }
 div.main .content .markdown {
   font-size: 1.1em;
@@ -321,7 +402,7 @@ div.main .content .markdown h4,
 div.main .content .markdown h5,
 div.main .content .markdown h6 {
   font-size: 22px;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
   letter-spacing: -0.005rem;
   font-weight: 700;
   font-smoothing: antialiased;
@@ -350,14 +431,14 @@ div.main .content .markdown h6 {
 }
 div.main .content .markdown code,
 div.main .content .markdown pre {
-  font-family: 'Menlo', monospace;
+  font-family: "Menlo", monospace;
   font-size: 0.98rem;
   background-color: #f7f7f7;
   overflow: auto;
 }
 div.main .content .markdown code {
   /* enclosed by single backtick (`) */
-  padding: .15em .5em;
+  padding: 0.15em 0.5em;
   border-radius: 2px;
 }
 div.main .content .markdown pre {
@@ -397,7 +478,7 @@ div.main .content .markdown dt {
   font-weight: bold;
 }
 div.main .content .markdown dd {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 div.main .content .markdown ul {
   list-style-type: disc;
@@ -435,10 +516,10 @@ div.main .content .markdown abbr[title] {
   border-bottom: 1px dotted #808080;
 }
 div.main .content .markdown blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
+  padding: 0.5rem 1rem;
+  margin: 0.8rem 0;
   color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+  border-left: 0.25rem solid #e5e5e5;
 }
 div.main .content .markdown blockquote p:last-child {
   margin-bottom: 0;
@@ -464,7 +545,7 @@ div.main .content .markdown table {
 }
 div.main .content .markdown td,
 div.main .content .markdown th {
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   border: 1px solid #e5e5e5;
 }
 div.main .content .markdown tbody tr:nth-child(odd) td,
@@ -504,7 +585,8 @@ div.main .content .navigation a {
   font-style: italic;
   color: #313537;
 }
-div.main .content .share, div.main .content .share div {
+div.main .content .share,
+div.main .content .share div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -521,10 +603,10 @@ kbd {
   padding: 0.1em 0.6em;
   border: 1px solid #ccc;
   font-size: 11px;
-  font-family: Arial,Helvetica,sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f7f7f7;
   color: #333;
-  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
   border-radius: 3px;
   display: inline-block;
   margin: 0 0.1em;

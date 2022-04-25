@@ -1,14 +1,13 @@
 .logo {
-    vertical-align: middle;
-    max-width: 300px;
+  vertical-align: middle;
+  max-width: 300px;
 }
 .content {
-    margin: 3em auto;
-    text-align: center;
+  margin: 3em auto;
+  text-align: center;
 }
 .header {
-    margin-left: initial;
-    margin-right: initial;
-    padding: 0 !important;
+  margin-left: initial;
+  margin-right: initial;
+  padding: 0 !important;
 }
-
