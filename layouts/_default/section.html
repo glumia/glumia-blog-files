@@ -3,7 +3,13 @@
     <div class="container">
         <div class="content">
             <div class="posts">
-                <div class="page-heading">{{ .Title }}</div>
+                <div class="page-heading">
+                    {{ if eq .Title "Blog" }}
+                        Posts
+                    {{ else }}
+                        {{ .Title }}
+                    {{ end }}
+                </div>
 
                 {{ range where .Data.Pages "Title" .Title }}
                 <div class="markdown">

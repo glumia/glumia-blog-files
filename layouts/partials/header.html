@@ -17,7 +17,7 @@
             <nav>
                 <ul>
                     {{ if (and (ne (len (where .Site.RegularPages "Section" "blog")) 0) (not (in .Site.Params.exclude_headings "blog"))) }}
-                            <li><a href="/blog/">Blog</a></li>
+                            <li><a href="/blog/">Posts</a></li>
                     {{ end }}
                     {{ range $.Site.Home.Sections }}
                         {{ range first 1 (where .Pages "Section" "ne" "")}}
