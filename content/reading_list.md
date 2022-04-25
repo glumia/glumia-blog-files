@@ -1,9 +1,7 @@
 ---
 title: "Reading list"
-date: 2021-02-23T08:27:10+01:00
 ---
-### Blogs
-A collection of blogs I think are worth reading.
+#### Some blogs I like
 - https://danluu.com
 - https://jvns.ca
 - https://drewdevault.com
@@ -11,11 +9,12 @@ A collection of blogs I think are worth reading.
 - https://nullprogram.com
 - https://scattered-thoughts.net
 
-### Books
-A collection of books I have read, I am currently reading, or I'm considering
-to read in the future (if I don't change my mind in the meanwhile).
+#### Books
 
-~ Read
+Some (tech) books that I have read, am currently reading or considering reading
+in the future.
+
+Read:
 - The C Programming Language - D. Ritchie, B. Kernighan
 - The Mythical Man-Month - F. Brooks
 - Fluent Python - L. Ramalho
@@ -24,12 +23,10 @@ to read in the future (if I don't change my mind in the meanwhile).
 - How to Solve It - G. Pólya
 - A Philosophy of Software Design - J. Ousterhout
 - Computer Networking, A Top-Down Approach - Kurose, Ross
-
-~ Reading
 - The Practice of Programming - B. Kernighan, R. Pike
 - Ultimate Go - W. Kennedy
 
-~ Queue
+Queue:
 - Designing Data‑Intensive Applications - M. Kleppmann
 - Refactoring: Improving the Design of Existing Code - K. Beck, M. Fowler
 - Site Reliability Engineering
