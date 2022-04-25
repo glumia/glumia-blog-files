@@ -1,8 +1,8 @@
 .POSIX:
 
-# Clean `public` submodule
+# Remove hugo generated files
 clean:
-	rm -rf public
+	rm -rf public resources
 
 # Generate a clean build of the blog
 build: clean
