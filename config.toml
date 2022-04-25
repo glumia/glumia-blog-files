@@ -9,11 +9,8 @@ pluralizelisttitles = false
 enableRobotsTXT=true
 canonifyurls = true
 
-
-
 [permalinks]
 blog = "blog/:slug/"
-
 
 [params]
 dateform = "Jan 2, 2006"
@@ -29,7 +26,7 @@ email = "gius@glumia.dev"
 linkedin = "glumia"
 twitter = "glumia8"
 posts_navigation = true
-small_banner_logo = false
+small_banner_logo = true
 lang = "en"
 progressively = true
 latestpostcount = 5
