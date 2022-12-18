@@ -23,6 +23,7 @@ github = "glumia"
 email = "gius@glumia.dev"
 linkedin = "glumia"
 twitter = "glumia8"
+mastodon = "https://hachyderm.io/@glumia"
 posts_navigation = true
 small_banner_logo = true
 lang = "en"
