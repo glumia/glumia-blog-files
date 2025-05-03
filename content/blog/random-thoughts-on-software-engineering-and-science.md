@@ -39,7 +39,7 @@ Some of them:
 Maybe I'll write about them in the future.
 
 And you? What do you think? If you have anything to say reach out to me through
-my email or on Twitter, I love to talk about that kind of stuff.
+my email, I love to talk about that kind of stuff.
 
 ---
 

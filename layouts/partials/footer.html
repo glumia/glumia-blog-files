@@ -48,12 +48,6 @@
             </a>
         {{ end }}
 
-        {{ if .Site.Params.twitter }}
-            <a href="https://twitter.com/{{ .Site.Params.twitter }}" rel=me target="_blank">
-                <img class="icon" src="{{ .Site.BaseURL }}img/twitter.svg" alt="twitter" />
-            </a>
-        {{ end }}
-
         {{ if .Site.Params.mastodon }}
             <a href="{{ .Site.Params.mastodon }}" rel="me" target="_blank">
                 <img class="icon" src="{{ .Site.BaseURL }}img/mastodon.svg" alt="mastodon" />
