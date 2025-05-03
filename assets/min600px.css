@@ -2,7 +2,7 @@ body {
   justify-content: center;
 }
 .non-narrow.zero-top-spacing {
-  padding-top: 0 !important;
+  padding-top: 0;
 }
 section {
   padding: 0 16px;
@@ -111,12 +111,7 @@ div.main .content {
   font-size: 16px;
 }
 div.main .container .content .post-item {
-  display: flex;
-  list-style: none;
   padding-left: 1.5em;
-}
-div.main .container .content .post-item .meta {
-  display: block;
 }
 div.main .content .markdown blockquote {
   padding-right: 5rem;
