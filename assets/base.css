@@ -463,7 +463,7 @@ div.main .content .markdown a code:hover {
   text-decoration: underline;
 }
 div.main .content .markdown p {
-  text-align: justify;
+  text-align: left;
   margin-top: 0;
   margin-bottom: 1em;
 }
