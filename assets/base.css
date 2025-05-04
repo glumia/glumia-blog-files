@@ -458,7 +458,7 @@ img {
 .main .content .markdown code,
 .main .content .markdown pre {
   font-family: var(--font-mono);
-  font-size: 0.98rem;
+  font-size: 0.9em;
   background-color: var(--code-bg-color);
   overflow: auto;
 }
@@ -478,7 +478,6 @@ img {
 }
 .main .content .markdown pre code {
   padding: 0;
-  font-size: 0.9rem;
 }
 .main .content .markdown a code {
   color: var(--link-color);
