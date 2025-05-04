@@ -2,8 +2,7 @@
 title: "About"
 weight: 3
 ---
-I am a backend software engineer. I make those things you can't see but that keep web
-applications going.
+Software engineer specialised in backend web development.
 
 I like command line interfaces, unix-like operating systems, C, Go, Python, lisps,
-vim, well written code/documentation and many other things.
+vim, and well written code or documentation.
