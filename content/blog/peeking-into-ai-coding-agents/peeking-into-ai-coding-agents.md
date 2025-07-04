@@ -39,7 +39,9 @@ Anyway, I hope in the future we'll move away from this trend of hiding system
 prompts, and it will become normal to expose these and allow their
 customization by users.
 
-Further reading:
+---
+
+_Further reading_
 - https://github.com/automata/aicodeguide
 - https://simonwillison.net/2025/Mar/11/using-llms-for-code/
 - https://ampcode.com/how-to-build-an-agent
