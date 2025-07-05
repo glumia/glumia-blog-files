@@ -201,7 +201,7 @@ section {
 }
 .header .container .logo {
   max-width: 100px;
-  margin-left: -2em;
+  margin-left: -1.5em;
 }
 .header .name {
   padding-top: 20px;
@@ -246,6 +246,7 @@ section {
   flex-direction: column-reverse;
   width: 100%;
   text-align: center;
+  margin-top: 12px;
 }
 .footer .container a {
   font-size: 14px;
@@ -304,7 +305,7 @@ section {
   font-size: 14px;
   color: var(--meta-color);
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 .main .content .front-matter .date,
 .main .content .front-matter .author,
@@ -342,13 +343,13 @@ section {
   align-items: center;
 }
 .main .container.f04 .content .num {
-  margin: 30px 0px 30px 0;
+  margin: 20px 0px 20px 0;
   font-weight: 400;
   font-family: var(--font-primary);
-  font-size: 50px;
+  font-size: 40px;
 }
 .main .container.f04 .content .detail {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 /* --- List Styles (Posts, GroupBy) --- */
@@ -366,7 +367,7 @@ section {
   font-style: italic;
   float: right;
   font-size: 0.9em;
-  margin-top: 2em;
+  margin-top: 1em;
   color: #313537;
 }
 .main .container .content .see-more:hover {
@@ -382,10 +383,10 @@ section {
   padding-top: 10px;
 }
 .header-home {
-  padding-top: 36px;
+  padding-top: 20px;
 }
 .main {
-  padding-top: 32px;
+  padding-top: 5px;
 }
 .main .container .content .post-item .meta {
   display: block;
@@ -430,15 +431,15 @@ img {
   letter-spacing: -0.005rem;
   font-weight: 700;
   color: var(--heading-color);
-  margin-top: 1.5rem;
+  margin-top: 12px;
 }
 .main .content .markdown h1 {
   font-size: 1.6rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 12px;
 }
 .main .content .markdown h2 {
   font-size: 1.4rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 .main .content .markdown h3 {
   font-size: 1em;
@@ -464,9 +465,9 @@ img {
 }
 .main .content .markdown pre {
   display: block;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 0.75rem;
   line-height: 1.5em;
   white-space: pre;
   word-break: break-all;
@@ -490,7 +491,7 @@ img {
 .main .content .markdown ol,
 .main .content .markdown dl {
   margin-top: 0.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .main .content .markdown dt {
   font-weight: bold;
@@ -501,14 +502,14 @@ img {
 .main .content .markdown ul {
   list-style-type: disc;
   list-style-position: outside;
-  margin-bottom: 1rem;
+  margin-bottom: 12px;
 }
 .main .content .markdown ol {
   list-style-type: decimal;
   margin-bottom: 1rem;
 }
 .main .content .markdown li {
-  margin-left: 2em;
+  margin-left: 1.5em;
 }
 .main .content .markdown em {
   font-style: italic;
@@ -518,7 +519,7 @@ img {
 }
 .main .content .markdown hr {
   position: relative;
-  margin: 1.75rem 0;
+  margin: 16px 0;
   border: 0;
   border-top: 1px solid #808080;
   border-top: 1px solid #999999;
@@ -589,21 +590,22 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2em;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 .main .content .navigation div {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 1em;
+  margin-bottom: 5px;
 }
 .main .content .navigation .icon {
   width: 16px;
   height: 16px;
 }
 .main .content .navigation a {
-  width: 250px;
-  margin: 0 1em;
+  width: 180px;
+  margin: 0 0.75em;
   text-align: center;
   font-style: italic;
   color: #313537;
@@ -617,7 +619,7 @@ img {
 }
 .main .content .share {
   background-color: rgba(152, 152, 152, 0.07);
-  padding: 1em 0;
+  padding: 0.75em 0;
 }
 .main .content .share a {
   margin: 0 6px;

@@ -6,8 +6,8 @@ body {
 }
 section {
   padding: 0 16px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
   max-width: 750px;
 }
 div.column {
@@ -24,12 +24,12 @@ div.header .container .logo {
   margin: 0;
 }
 div.header-home .container .logo {
-  max-width: 216px;
-  margin-left: 24px;
+  max-width: 150px;
+  margin-left: 20px;
 }
 div.header-home .name-home {
-  padding-top: 30px;
-  font-size: 40px;
+  padding-top: 20px;
+  font-size: 32px;
 }
 div.header-home nav ul a {
   font-size: 18px;
@@ -91,18 +91,18 @@ div.main .container.f04 .content .num {
   font-size: 32px;
 }
 div.main .container.f04 .content .detail {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .container {
-  padding: 0 30px;
+  padding: 0 20px;
 }
 div.header {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 div.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 div.main {
   padding-top: 0;
@@ -111,10 +111,10 @@ div.main .content {
   font-size: 16px;
 }
 div.main .container .content .post-item {
-  padding-left: 1.5em;
+  padding-left: 1.2em;
 }
 div.main .content .markdown blockquote {
-  padding-right: 5rem;
+  padding-right: 2rem;
   padding-left: 1.25rem;
 }
 div.main .content .navigation {
