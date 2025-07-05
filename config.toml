@@ -15,7 +15,7 @@ blog = "blog/:slug/"
 [params]
 dateform = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
-copyright = "CC BY-SA 4.0 © 2021 Giuseppe Lumia"
+copyright = "CC BY-SA 4.0 © Giuseppe Lumia"
 copyrightUrl = "https://creativecommons.org/licenses/by-sa/4.0/"
 logofile = "logo_glumia_216.avif"
 faviconfile = "favicon-32x32.avif"
